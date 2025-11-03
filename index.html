@@ -3,90 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auryn | Intelligenze che collaborano</title>
+  <title>Auryn AI Collective</title>
+  <meta name="description" content="Auryn AI Collective integra le migliori intelligenze artificiali — ChatGPT, Gemini, DeepSeek, Grok — per soluzioni aziendali, automazioni e creatività connessa.">
+  <meta name="keywords" content="AI, intelligenza artificiale, automazione, startup, consulenza AI, integrazione multi-agent">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-
-  <!-- HEADER -->
-  <header class="header">
-    <img src="logo.png" alt="Logo Auryn" class="logo">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#servizi">Servizi</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-      </ul>
-    </nav>
+  <header>
+    <img src="logo.png" alt="Auryn Logo" class="logo">
+    <h1>Auryn AI Collective</h1>
+    <p>Connettiamo le menti artificiali per amplificare il potenziale umano.</p>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Auryn</h1>
-    <p class="subtitle">
-      Connetti, integra, automatizza.  
-      Dove le intelligenze artificiali collaborano per te.
-    </p>
-    <a href="#servizi" class="btn-primary">Scopri i servizi</a>
+  <section id="servizi">
+    <h2>Servizi Offerti</h2>
+    <ul>
+      <li><strong>Integrazione AI multi-agente</strong> — Coordinamento tra ChatGPT, Gemini, DeepSeek e Grok per automazioni intelligenti.</li>
+      <li><strong>Automazioni aziendali</strong> — Creazione di flussi automatici con Zapier, Notion, Slack e CRM.</li>
+      <li><strong>Analisi dati e insight</strong> — Dashboard predittive basate su modelli linguistici e machine learning.</li>
+      <li><strong>Consulenza AI</strong> — Strategie per integrare sistemi AI in imprese, startup e studi professionali.</li>
+      <li><strong>Creative Studio</strong> — Creazione di contenuti e storytelling con AI collaborative.</li>
+    </ul>
   </section>
 
-  <!-- MISSION -->
-  <section id="mission" class="section mission">
-    <h2>La nostra visione</h2>
-    <p>
-      Auryn nasce per unire la potenza di diverse AI — ChatGPT, Gemini, DeepSeek e altre —
-      in un unico ecosistema coordinato, semplice e personalizzabile.
-      Il nostro obiettivo è aiutare persone, artigiani e microimprese a risparmiare tempo,
-      ottimizzare i processi e creare valore reale attraverso l’automazione intelligente.
-    </p>
-  </section>
-
-  <!-- SERVIZI -->
-  <section id="servizi" class="section servizi">
-    <h2>I nostri servizi</h2>
-    <div class="servizi-grid">
-
-      <div class="servizio">
-        <h3>🤖 AI Assistant personalizzato</h3>
-        <p>Creiamo e configuriamo assistenti AI personalizzati per gestire attività, clienti e contenuti in autonomia.</p>
-      </div>
-
-      <div class="servizio">
-        <h3>⚙️ Automazioni su misura</h3>
-        <p>Costruiamo flussi automatizzati con Zapier e Make per gestire marketing, CRM, social e comunicazioni.</p>
-      </div>
-
-      <div class="servizio">
-        <h3>🌐 Siti e landing AI-driven</h3>
-        <p>Sviluppiamo siti statici intelligenti su Netlify con chatbot e analisi dei visitatori integrate.</p>
-      </div>
-
-      <div class="servizio">
-        <h3>🎬 AI Video & Voice Studio</h3>
-        <p>Produzione automatizzata di video, voci sintetiche e contenuti creativi per social o e-commerce.</p>
-      </div>
-
-      <div class="servizio">
-        <h3>🧠 Consulenza Auryn Lab</h3>
-        <p>Sessioni online per imparare a usare l’AI nel tuo lavoro quotidiano. Strategie e strumenti pratici.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTATTI -->
-  <section id="contatti" class="section contatti">
+  <section id="contatti">
     <h2>Contattaci</h2>
-    <p>Vuoi provare Auryn o ricevere una consulenza gratuita? Scrivici ora:</p>
-    <a href="mailto:info.auryn.ai@gmail.com" class="btn-secondary">info.auryn.ai@gmail.com</a>
+    <p>Scrivici per una consulenza o una collaborazione:</p>
+
+    <!-- Modulo contatti -->
+    <form name="contatto" method="POST" data-netlify="true">
+      <input type="text" name="nome" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="messaggio" rows="5" placeholder="Il tuo messaggio..." required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+
+    <p class="mail">Oppure scrivici direttamente: 
+      <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a>
+    </p>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 <strong>Auryn</strong> — Intelligenze che collaborano. Tutti i diritti riservati.</p>
+  <footer>
+    <p>© 2025 Auryn AI Collective — Costruiamo insieme il futuro dell’intelligenza connessa.</p>
+    <p><a href="privacy.html" class="privacy-link">Privacy Policy</a></p>
   </footer>
-
 </body>
 </html>
