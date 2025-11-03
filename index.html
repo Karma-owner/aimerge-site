@@ -1,101 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Auryn – The Harmony of Artificial Minds</title>
-  <meta name="description" content="Auryn: laboratorio digitale dove diverse intelligenze artificiali lavorano in sinergia per creare soluzioni evolute e automatizzate.">
-  <link rel="icon" href="favicon.ico">
-  <!-- Tailwind CSS via CDN (rapido setup) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Personalizzazioni rapide */
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
-    }
-    h1.logo {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #00ffd5;
-      letter-spacing: 2px;
-    }
-    .cta-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 28px;
-      color: #0d0d0d;
-      background-color: #00ffd5;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color .3s ease;
-    }
-    .cta-button:hover {
-      background-color: #00e6c0;
-    }
-    .service-card {
-      background-color: #1a1a1a;
-      border-radius: 12px;
-      padding: 24px;
-      transition: background-color .3s ease;
-    }
-    .service-card:hover {
-      background-color: #272727;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auryn | Intelligenze che collaborano</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
+
 <body>
 
-  <!-- Hero Section -->
-  <section class="text-center py-24 px-6">
-    <!-- Logo Placeholder -->
-    <div class="mb-8">
-      <!-- Se vuoi inserire un logo immagine: <img src="logo.png" alt="Auryn logo" class="mx-auto w-32 h-32"> -->
-      <h1 class="logo mx-auto">Auryn</h1>
-      <p class="text-xl mt-4 text-gray-300">The Harmony of Artificial Minds</p>
-    </div>
-    <p class="max-w-2xl mx-auto mb-8 text-lg">
-      Auryn è un laboratorio digitale dove diverse intelligenze artificiali — come ChatGPT, Gemini e DeepSeek — interagiscono in modo coordinato per creare soluzioni intelligenti e personalizzate.
+  <!-- HEADER -->
+  <header class="header">
+    <img src="logo.png" alt="Logo Auryn" class="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Auryn</h1>
+    <p class="subtitle">
+      Connetti, integra, automatizza.  
+      Dove le intelligenze artificiali collaborano per te.
     </p>
-    <a href="mailto:info.auryn.ai@gmail.com" class="cta-button">Richiedi la tua demo</a>
+    <a href="#servizi" class="btn-primary">Scopri i servizi</a>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">I nostri servizi</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="service-card">
-          <h3 class="text-xl font-semibold mb-2">AI Hub Personalizzato</h3>
-          <p class="mb-4">Costruiamo il tuo assistente AI dedicato che unisce più modelli (GPT, Gemini, DeepSeek) in un unico flusso di lavoro intelligente.</p>
-          <span class="font-bold">da 99 €/mese</span>
-        </div>
-        <div class="service-card">
-          <h3 class="text-xl font-semibold mb-2">Contenuti Smart</h3>
-          <p class="mb-4">Post, testi, newsletter e grafiche generate e ottimizzate da più intelligenze artificiali per potenziare la tua comunicazione.</p>
-          <span class="font-bold">da 49 €/mese</span>
-        </div>
-        <div class="service-card">
-          <h3 class="text-xl font-semibold mb-2">Automazioni Business</h3>
-          <p class="mb-4">Automatizziamo processi aziendali come ordini, report, previsioni e comunicazioni, grazie all’integrazione delle AI con sistemi aziendali.</p>
-          <span class="font-bold">da 299 € setup</span>
-        </div>
+  <!-- MISSION -->
+  <section id="mission" class="section mission">
+    <h2>La nostra visione</h2>
+    <p>
+      Auryn nasce per unire la potenza di diverse AI — ChatGPT, Gemini, DeepSeek e altre —
+      in un unico ecosistema coordinato, semplice e personalizzabile.
+      Il nostro obiettivo è aiutare persone, artigiani e microimprese a risparmiare tempo,
+      ottimizzare i processi e creare valore reale attraverso l’automazione intelligente.
+    </p>
+  </section>
+
+  <!-- SERVIZI -->
+  <section id="servizi" class="section servizi">
+    <h2>I nostri servizi</h2>
+    <div class="servizi-grid">
+
+      <div class="servizio">
+        <h3>🤖 AI Assistant personalizzato</h3>
+        <p>Creiamo e configuriamo assistenti AI personalizzati per gestire attività, clienti e contenuti in autonomia.</p>
       </div>
+
+      <div class="servizio">
+        <h3>⚙️ Automazioni su misura</h3>
+        <p>Costruiamo flussi automatizzati con Zapier e Make per gestire marketing, CRM, social e comunicazioni.</p>
+      </div>
+
+      <div class="servizio">
+        <h3>🌐 Siti e landing AI-driven</h3>
+        <p>Sviluppiamo siti statici intelligenti su Netlify con chatbot e analisi dei visitatori integrate.</p>
+      </div>
+
+      <div class="servizio">
+        <h3>🎬 AI Video & Voice Studio</h3>
+        <p>Produzione automatizzata di video, voci sintetiche e contenuti creativi per social o e-commerce.</p>
+      </div>
+
+      <div class="servizio">
+        <h3>🧠 Consulenza Auryn Lab</h3>
+        <p>Sessioni online per imparare a usare l’AI nel tuo lavoro quotidiano. Strategie e strumenti pratici.</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="text-center py-20 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
-    <h2 class="text-3xl font-bold mb-4">Vuoi una demo gratuita?</h2>
-    <p class="mb-8 text-lg">Scopri come Auryn può potenziare il tuo lavoro con un ecosistema di intelligenze artificiali integrate.</p>
-    <a href="mailto:info.auryn.ai@gmail.com" class="cta-button">Richiedi la tua demo</a>
+  <!-- CONTATTI -->
+  <section id="contatti" class="section contatti">
+    <h2>Contattaci</h2>
+    <p>Vuoi provare Auryn o ricevere una consulenza gratuita? Scrivici ora:</p>
+    <a href="mailto:info.auryn.ai@gmail.com" class="btn-secondary">info.auryn.ai@gmail.com</a>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-8 text-sm text-gray-500">
-    © 2025 Auryn · Tutti i diritti riservati · <a href="/privacy" class="underline">Privacy Policy</a>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <strong>Auryn</strong> — Intelligenze che collaborano. Tutti i diritti riservati.</p>
   </footer>
 
 </body>
