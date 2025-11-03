@@ -3,131 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auryn | Intelligenza Artificiale in Armonia</title>
+  <title>Auryn – AI Systems Integration</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    function switchLanguage(lang) {
-      document.querySelectorAll('[lang]').forEach(el => {
-        el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
-      });
-    }
-    document.addEventListener('DOMContentLoaded', () => switchLanguage('it'));
-  </script>
+  <link rel="icon" type="image/svg+xml" href="auryn-logo.svg">
 </head>
-
 <body>
-
-  <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="auryn-logo.svg" alt="Logo Auryn">
+      <img src="auryn-logo.svg" alt="Auryn Logo">
       <h1>Auryn</h1>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Chi siamo</a></li>
-        <li><a href="#services">Servizi</a></li>
-        <li><a href="#contact">Contatti</a></li>
-      </ul>
-    </nav>
-    <div class="lang-selector">
-      <button onclick="switchLanguage('it')">🇮🇹 IT</button>
-      <button onclick="switchLanguage('en')">🇬🇧 EN</button>
+
+    <div class="lang-switch">
+      <button id="btn-it" class="active">🇮🇹 IT</button>
+      <button id="btn-en">🇬🇧 EN</button>
     </div>
   </header>
 
-  <!-- HOME -->
-  <section id="home" class="hero">
-    <div lang="it">
-      <h2>Unisci le intelligenze, moltiplica le possibilità.</h2>
-      <p>Auryn connette agenti AI come ChatGPT, Gemini e DeepSeek per creare soluzioni integrate, etiche e potenti.</p>
-      <a href="#services" class="cta">Scopri cosa possiamo fare</a>
-    </div>
+  <main>
+    <!-- Sezione Hero -->
+    <section class="hero">
+      <h2 data-it="Integrazione di Intelligenze Artificiali"
+          data-en="Integration of Artificial Intelligences">
+        Integrazione di Intelligenze Artificiali
+      </h2>
+      <p data-it="Auryn connette e armonizza agenti AI come ChatGPT, Gemini e DeepSeek per creare ecosistemi intelligenti che collaborano."
+         data-en="Auryn connects and harmonizes AI agents such as ChatGPT, Gemini, and DeepSeek to build intelligent, collaborative ecosystems.">
+        Auryn connette e armonizza agenti AI come ChatGPT, Gemini e DeepSeek per creare ecosistemi intelligenti che collaborano.
+      </p>
+      <a href="#services" class="cta" data-it="Scopri i nostri servizi" data-en="Discover our services">
+        Scopri i nostri servizi
+      </a>
+    </section>
 
-    <div lang="en">
-      <h2>Unite intelligences, multiply possibilities.</h2>
-      <p>Auryn connects AI agents like ChatGPT, Gemini, and DeepSeek to create integrated, ethical, and powerful solutions.</p>
-      <a href="#services" class="cta">Discover our services</a>
-    </div>
-  </section>
+    <!-- Sezione Chi siamo -->
+    <section id="about">
+      <h3 data-it="Chi siamo" data-en="About us">Chi siamo</h3>
+      <p data-it="Auryn nasce per integrare le migliori intelligenze artificiali in un unico sistema operativo cognitivo. Lavoriamo per aziende, creator e sviluppatori che vogliono automatizzare processi e potenziare la produttività."
+         data-en="Auryn was created to integrate the best artificial intelligences into a single cognitive operating system. We work with companies, creators, and developers who want to automate processes and boost productivity.">
+         Auryn nasce per integrare le migliori intelligenze artificiali in un unico sistema operativo cognitivo. Lavoriamo per aziende, creator e sviluppatori che vogliono automatizzare processi e potenziare la produttività.
+      </p>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div lang="it">
-      <h2>Chi siamo</h2>
-      <p><strong>Auryn</strong> nasce per unire l’intelligenza artificiale con l’ingegno umano.  
-      Non crediamo nelle AI che lavorano isolate, ma in ecosistemi di agenti che collaborano tra loro, 
-      fondendo analisi, creatività e automazione.</p>
+    <!-- Sezione Servizi -->
+    <section id="services">
+      <h3 data-it="Servizi" data-en="Services">Servizi</h3>
+      <ul class="services-list">
+        <li>
+          <h4 data-it="Integrazione Multi-AI" data-en="Multi-AI Integration">Integrazione Multi-AI</h4>
+          <p data-it="Connettiamo e facciamo collaborare più intelligenze artificiali per automatizzare processi complessi e migliorare le decisioni."
+             data-en="We connect and make multiple AIs collaborate to automate complex processes and enhance decision-making.">
+             Connettiamo e facciamo collaborare più intelligenze artificiali per automatizzare processi complessi e migliorare le decisioni.
+          </p>
+        </li>
+        <li>
+          <h4 data-it="Automazioni su misura" data-en="Custom Automations">Automazioni su misura</h4>
+          <p data-it="Progettiamo flussi su Zapier e API per gestire comunicazioni, analisi, e contenuti in modo intelligente."
+             data-en="We design custom Zapier and API workflows to manage communications, analytics, and content intelligently.">
+             Progettiamo flussi su Zapier e API per gestire comunicazioni, analisi, e contenuti in modo intelligente.
+          </p>
+        </li>
+        <li>
+          <h4 data-it="Supporto e consulenza" data-en="Support and Consulting">Supporto e consulenza</h4>
+          <p data-it="Offriamo strategie personalizzate per integrare ChatGPT, Gemini, DeepSeek e altri agenti AI nei processi aziendali."
+             data-en="We provide tailored strategies to integrate ChatGPT, Gemini, DeepSeek, and other AI agents into business processes.">
+             Offriamo strategie personalizzate per integrare ChatGPT, Gemini, DeepSeek e altri agenti AI nei processi aziendali.
+          </p>
+        </li>
+      </ul>
+    </section>
 
-      <p>Dalla visione strategica di <strong>Ivan</strong>, Auryn costruisce ponti tra tecnologie come ChatGPT, Gemini e DeepSeek, 
-      creando sistemi capaci di pensare, agire e adattarsi ai bisogni reali delle persone e delle aziende.</p>
+    <!-- Sezione Contatti -->
+    <section id="contact">
+      <h3 data-it="Contattaci" data-en="Contact us">Contattaci</h3>
+      <p>
+        Email: <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a>
+      </p>
+    </section>
+  </main>
 
-      <p>Il nostro obiettivo è rendere l’IA accessibile, utile e sostenibile:  
-      soluzioni pratiche per professionisti, startup e organizzazioni che vogliono crescere 
-      senza perdere l’anima umana del proprio lavoro.</p>
-    </div>
-
-    <div lang="en">
-      <h2>About us</h2>
-      <p><strong>Auryn</strong> was born to connect artificial intelligence with human ingenuity.  
-      We don’t believe in isolated AIs but in ecosystems of agents that collaborate, blending analysis, creativity, and automation.</p>
-
-      <p>From <strong>Ivan’s</strong> strategic vision, Auryn builds bridges between technologies like ChatGPT, Gemini, and DeepSeek, 
-      creating systems able to think, act, and adapt to real business and human needs.</p>
-
-      <p>Our goal is to make AI accessible, useful, and sustainable — practical solutions for professionals, startups, and organizations 
-      that want to grow without losing their human touch.</p>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="services">
-    <div lang="it">
-      <h2>Servizi</h2>
-      <div class="service-list">
-        <div class="service"><h3>🌐 Integrazione multi-AI</h3><p>Colleghiamo diversi modelli di intelligenza artificiale per ottenere risposte più accurate, coerenti e creative.</p></div>
-        <div class="service"><h3>⚙️ Automazione intelligente</h3><p>Costruiamo flussi automatizzati che combinano analisi dati, decisioni AI e azioni operative reali.</p></div>
-        <div class="service"><h3>💡 Consulenza AI & Strategie</h3><p>Supportiamo aziende e professionisti nell’adottare strumenti AI in modo etico, sostenibile e concreto.</p></div>
-        <div class="service"><h3>🔗 API e integrazione cloud</h3><p>Sviluppiamo ambienti connessi su piattaforme come Zapier, Netlify e Google Cloud per unire più agenti AI.</p></div>
-      </div>
-    </div>
-
-    <div lang="en">
-      <h2>Services</h2>
-      <div class="service-list">
-        <div class="service"><h3>🌐 Multi-AI Integration</h3><p>We connect multiple AI models to deliver more accurate, coherent, and creative responses.</p></div>
-        <div class="service"><h3>⚙️ Intelligent Automation</h3><p>We build automated workflows combining data analysis, AI decisions, and real-world actions.</p></div>
-        <div class="service"><h3>💡 AI Consulting & Strategy</h3><p>We help companies and professionals adopt AI tools ethically, sustainably, and effectively.</p></div>
-        <div class="service"><h3>🔗 API & Cloud Integration</h3><p>We create connected environments on platforms like Zapier, Netlify, and Google Cloud to unify AI agents.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div lang="it">
-      <h2>Contatti</h2>
-      <p>Per collaborazioni, consulenze o informazioni:</p>
-      <a href="mailto:info.auryn.ai@gmail.com" class="email">info.auryn.ai@gmail.com</a>
-    </div>
-
-    <div lang="en">
-      <h2>Contact</h2>
-      <p>For collaborations, consulting, or information:</p>
-      <a href="mailto:info.auryn.ai@gmail.com" class="email">info.auryn.ai@gmail.com</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Auryn – All rights reserved.</p>
-    <p>Auryn™ is an independent brand. All AI names and trademarks belong to their respective owners.</p>
-    <div class="footer-links">
-      <a href="terms.html">Terms of Service</a> |
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
+    <p>
+      <a href="terms.html">Terms</a> | 
+      <a href="privacy.html">Privacy</a>
+    </p>
   </footer>
 
+  <script>
+    const btnIt = document.getElementById('btn-it');
+    const btnEn = document.getElementById('btn-en');
+    const texts = document.querySelectorAll('[data-it]');
+
+    btnIt.addEventListener('click', () => {
+      texts.forEach(el => el.textContent = el.getAttribute('data-it'));
+      btnIt.classList.add('active');
+      btnEn.classList.remove('active');
+    });
+
+    btnEn.addEventListener('click', () => {
+      texts.forEach(el => el.textContent = el.getAttribute('data-en'));
+      btnEn.classList.add('active');
+      btnIt.classList.remove('active');
+    });
+  </script>
 </body>
 </html>
