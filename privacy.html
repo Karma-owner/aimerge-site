@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auryn – Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="auryn-logo.svg" alt="Auryn Logo">
+      <h1>Auryn</h1>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h2 data-it="Informativa sulla Privacy" data-en="Privacy Policy">Informativa sulla Privacy</h2>
+
+    <section>
+      <h3 data-it="1. Dati raccolti" data-en="1. Data Collected">1. Dati raccolti</h3>
+      <p data-it="Auryn non raccoglie né conserva dati personali attraverso il sito. Le comunicazioni avvengono esclusivamente via email e vengono utilizzate solo per rispondere alle richieste ricevute."
+         data-en="Auryn does not collect or store any personal data through this website. Communications occur solely via email and are used only to respond to received requests.">
+         Auryn non raccoglie né conserva dati personali attraverso il sito. Le comunicazioni avvengono esclusivamente via email e vengono utilizzate solo per rispondere alle richieste ricevute.
+      </p>
+    </section>
+
+    <section>
+      <h3 data-it="2. Servizi di terze parti" data-en="2. Third-party Services">2. Servizi di terze parti</h3>
+      <p data-it="Auryn utilizza integrazioni con piattaforme esterne (es. OpenAI, Google Gemini, DeepSeek, Zapier) che gestiscono autonomamente i propri dati e policy."
+         data-en="Auryn integrates with external platforms (e.g., OpenAI, Google Gemini, DeepSeek, Zapier) that independently handle their own data and policies.">
+         Auryn utilizza integrazioni con piattaforme esterne (es. OpenAI, Google Gemini, DeepSeek, Zapier) che gestiscono autonomamente i propri dati e policy.
+      </p>
+    </section>
+
+    <section>
+      <h3 data-it="3. Sicurezza" data-en="3. Security">3. Sicurezza</h3>
+      <p data-it="Le comunicazioni email sono gestite tramite provider sicuri. Tuttavia, nessuna trasmissione online può essere considerata completamente sicura."
+         data-en="Email communications are managed through secure providers. However, no online transmission can be considered completely secure.">
+         Le comunicazioni email sono gestite tramite provider sicuri. Tuttavia, nessuna trasmissione online può essere considerata completamente sicura.
+      </p>
+    </section>
+
+    <section>
+      <h3 data-it="4. Contatti" data-en="4. Contact">4. Contatti</h3>
+      <p data-it="Per qualsiasi domanda sulla privacy, scrivi a: info.auryn.ai@gmail.com"
+         data-en="For any privacy-related question, please contact: info.auryn.ai@gmail.com">
+         Per qualsiasi domanda sulla privacy, scrivi a: info.auryn.ai@gmail.com
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Auryn – All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> | 
+      <a href="terms.html">Terms</a>
+    </p>
+  </footer>
+
+  <script>
+    const lang = navigator.language.startsWith("en") ? "en" : "it";
+    const texts = document.querySelectorAll('[data-it]');
+    texts.forEach(el => el.textContent = el.getAttribute(`data-${lang}`));
+  </script>
+</body>
+</html>
