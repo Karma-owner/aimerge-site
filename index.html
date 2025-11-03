@@ -3,108 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auryn – AI Systems Integration</title>
+  <title>Auryn – AI Ecosystems</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/svg+xml" href="auryn-logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#home" class="logo">
       <img src="auryn-logo.svg" alt="Auryn Logo">
-      <h1>Auryn</h1>
-    </div>
-
-    <div class="lang-switch">
-      <button id="btn-it" class="active">🇮🇹 IT</button>
-      <button id="btn-en">🇬🇧 EN</button>
-    </div>
+      <span>Auryn</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">Chi siamo</a></li>
+        <li><a href="#services">Servizi</a></li>
+        <li><a href="terms.html">Termini</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><button id="langToggle">EN</button></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <!-- Sezione Hero -->
-    <section class="hero">
-      <h2 data-it="Integrazione di Intelligenze Artificiali"
-          data-en="Integration of Artificial Intelligences">
-        Integrazione di Intelligenze Artificiali
-      </h2>
-      <p data-it="Auryn connette e armonizza agenti AI come ChatGPT, Gemini e DeepSeek per creare ecosistemi intelligenti che collaborano."
-         data-en="Auryn connects and harmonizes AI agents such as ChatGPT, Gemini, and DeepSeek to build intelligent, collaborative ecosystems.">
-        Auryn connette e armonizza agenti AI come ChatGPT, Gemini e DeepSeek per creare ecosistemi intelligenti che collaborano.
-      </p>
-      <a href="#services" class="cta" data-it="Scopri i nostri servizi" data-en="Discover our services">
-        Scopri i nostri servizi
-      </a>
-    </section>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1 data-it="Ecosistemi di Intelligenze Artificiali" data-en="AI Ecosystems that Collaborate">
+      Ecosistemi di Intelligenze Artificiali
+    </h1>
+    <p data-it="Auryn unisce diversi agenti AI per creare soluzioni intelligenti, pratiche e sostenibili." 
+       data-en="Auryn connects AI agents to build intelligent, practical and sustainable systems.">
+      Auryn unisce diversi agenti AI per creare soluzioni intelligenti, pratiche e sostenibili.
+    </p>
+    <a href="#services" class="cta">Scopri i servizi</a>
+  </section>
 
-    <!-- Sezione Chi siamo -->
-    <section id="about">
-      <h3 data-it="Chi siamo" data-en="About us">Chi siamo</h3>
-      <p data-it="Auryn nasce per integrare le migliori intelligenze artificiali in un unico sistema operativo cognitivo. Lavoriamo per aziende, creator e sviluppatori che vogliono automatizzare processi e potenziare la produttività."
-         data-en="Auryn was created to integrate the best artificial intelligences into a single cognitive operating system. We work with companies, creators, and developers who want to automate processes and boost productivity.">
-         Auryn nasce per integrare le migliori intelligenze artificiali in un unico sistema operativo cognitivo. Lavoriamo per aziende, creator e sviluppatori che vogliono automatizzare processi e potenziare la produttività.
-      </p>
-    </section>
+  <!-- About -->
+  <section id="about" class="about">
+    <h2 data-it="Chi siamo" data-en="About us">Chi siamo</h2>
+    <p data-it="Auryn nasce per unire l’intelligenza artificiale con l’ingegno umano. Creiamo ecosistemi dove ChatGPT, Gemini e DeepSeek collaborano per fondere analisi, creatività e automazione." 
+       data-en="Auryn was born to unite artificial intelligence with human creativity. We build ecosystems where ChatGPT, Gemini, and DeepSeek collaborate to blend analysis, creativity, and automation.">
+      Auryn nasce per unire l’intelligenza artificiale con l’ingegno umano. Creiamo ecosistemi dove ChatGPT, Gemini e DeepSeek collaborano per fondere analisi, creatività e automazione.
+    </p>
+  </section>
 
-    <!-- Sezione Servizi -->
-    <section id="services">
-      <h3 data-it="Servizi" data-en="Services">Servizi</h3>
-      <ul class="services-list">
-        <li>
-          <h4 data-it="Integrazione Multi-AI" data-en="Multi-AI Integration">Integrazione Multi-AI</h4>
-          <p data-it="Connettiamo e facciamo collaborare più intelligenze artificiali per automatizzare processi complessi e migliorare le decisioni."
-             data-en="We connect and make multiple AIs collaborate to automate complex processes and enhance decision-making.">
-             Connettiamo e facciamo collaborare più intelligenze artificiali per automatizzare processi complessi e migliorare le decisioni.
-          </p>
-        </li>
-        <li>
-          <h4 data-it="Automazioni su misura" data-en="Custom Automations">Automazioni su misura</h4>
-          <p data-it="Progettiamo flussi su Zapier e API per gestire comunicazioni, analisi, e contenuti in modo intelligente."
-             data-en="We design custom Zapier and API workflows to manage communications, analytics, and content intelligently.">
-             Progettiamo flussi su Zapier e API per gestire comunicazioni, analisi, e contenuti in modo intelligente.
-          </p>
-        </li>
-        <li>
-          <h4 data-it="Supporto e consulenza" data-en="Support and Consulting">Supporto e consulenza</h4>
-          <p data-it="Offriamo strategie personalizzate per integrare ChatGPT, Gemini, DeepSeek e altri agenti AI nei processi aziendali."
-             data-en="We provide tailored strategies to integrate ChatGPT, Gemini, DeepSeek, and other AI agents into business processes.">
-             Offriamo strategie personalizzate per integrare ChatGPT, Gemini, DeepSeek e altri agenti AI nei processi aziendali.
-          </p>
-        </li>
-      </ul>
-    </section>
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2 data-it="Servizi" data-en="Services">Servizi</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Integrazione AI</h3>
+        <p>Colleghiamo diversi agenti intelligenti (ChatGPT, Gemini, DeepSeek) per creare soluzioni coordinate e automatizzate.</p>
+      </div>
+      <div class="service">
+        <h3>Automazioni su misura</h3>
+        <p>Realizziamo workflow con Zapier e API per risparmiare tempo e migliorare i processi aziendali.</p>
+      </div>
+      <div class="service">
+        <h3>Consulenza AI</h3>
+        <p>Supportiamo professionisti e startup nell’adozione etica e strategica dell’intelligenza artificiale.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sezione Contatti -->
-    <section id="contact">
-      <h3 data-it="Contattaci" data-en="Contact us">Contattaci</h3>
-      <p>
-        Email: <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a>
-      </p>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
     <p>© 2025 Auryn – All rights reserved.</p>
-    <p>
-      <a href="terms.html">Terms</a> | 
-      <a href="privacy.html">Privacy</a>
+    <p class="disclaimer">
+      Auryn™ è un marchio indipendente. Tutti i nomi e marchi di AI citati appartengono ai rispettivi titolari.
     </p>
+    <p>Contatti: <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a></p>
   </footer>
 
+  <!-- Script per lingua -->
   <script>
-    const btnIt = document.getElementById('btn-it');
-    const btnEn = document.getElementById('btn-en');
-    const texts = document.querySelectorAll('[data-it]');
-
-    btnIt.addEventListener('click', () => {
-      texts.forEach(el => el.textContent = el.getAttribute('data-it'));
-      btnIt.classList.add('active');
-      btnEn.classList.remove('active');
-    });
-
-    btnEn.addEventListener('click', () => {
-      texts.forEach(el => el.textContent = el.getAttribute('data-en'));
-      btnEn.classList.add('active');
-      btnIt.classList.remove('active');
+    const toggle = document.getElementById('langToggle');
+    let lang = 'it';
+    toggle.addEventListener('click', () => {
+      lang = lang === 'it' ? 'en' : 'it';
+      document.querySelectorAll('[data-it]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+      toggle.textContent = lang === 'it' ? 'EN' : 'IT';
     });
   </script>
 </body>
