@@ -1,19 +1,102 @@
 <!doctype html>
-<html>
+<html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AIMerge</title>
-  <!-- Tailwind CDN (per sviluppo rapido) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auryn – The Harmony of Artificial Minds</title>
+  <meta name="description" content="Auryn: laboratorio digitale dove diverse intelligenze artificiali lavorano in sinergia per creare soluzioni evolute e automatizzate.">
+  <link rel="icon" href="favicon.ico">
+  <!-- Tailwind CSS via CDN (rapido setup) -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Personalizzazioni rapide */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+    }
+    h1.logo {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00ffd5;
+      letter-spacing: 2px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      color: #0d0d0d;
+      background-color: #00ffd5;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color .3s ease;
+    }
+    .cta-button:hover {
+      background-color: #00e6c0;
+    }
+    .service-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
+      transition: background-color .3s ease;
+    }
+    .service-card:hover {
+      background-color: #272727;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-gray-50 text-gray-800">
-  <!-- Inserisci qui il markup HTML della tua landing (adatta dal React) -->
-  <section class="text-center py-24 px-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
-    <h1 class="text-5xl font-bold mb-4">AIMerge</h1>
-    <p class="text-xl mb-8">Connetti le menti artificiali. Potenzia il tuo lavoro.</p>
-    <a href="#services" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Scopri cosa può fare AIMerge</a>
+<body>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-6">
+    <!-- Logo Placeholder -->
+    <div class="mb-8">
+      <!-- Se vuoi inserire un logo immagine: <img src="logo.png" alt="Auryn logo" class="mx-auto w-32 h-32"> -->
+      <h1 class="logo mx-auto">Auryn</h1>
+      <p class="text-xl mt-4 text-gray-300">The Harmony of Artificial Minds</p>
+    </div>
+    <p class="max-w-2xl mx-auto mb-8 text-lg">
+      Auryn è un laboratorio digitale dove diverse intelligenze artificiali — come ChatGPT, Gemini e DeepSeek — interagiscono in modo coordinato per creare soluzioni intelligenti e personalizzate.
+    </p>
+    <a href="mailto:info@auryn.ai" class="cta-button">Richiedi la tua demo</a>
   </section>
-  <!-- ... il resto della pagina ... -->
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">I nostri servizi</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="service-card">
+          <h3 class="text-xl font-semibold mb-2">AI Hub Personalizzato</h3>
+          <p class="mb-4">Costruiamo il tuo assistente AI dedicato che unisce più modelli (GPT, Gemini, DeepSeek) in un unico flusso di lavoro intelligente.</p>
+          <span class="font-bold">da 99 €/mese</span>
+        </div>
+        <div class="service-card">
+          <h3 class="text-xl font-semibold mb-2">Contenuti Smart</h3>
+          <p class="mb-4">Post, testi, newsletter e grafiche generate e ottimizzate da più intelligenze artificiali per potenziare la tua comunicazione.</p>
+          <span class="font-bold">da 49 €/mese</span>
+        </div>
+        <div class="service-card">
+          <h3 class="text-xl font-semibold mb-2">Automazioni Business</h3>
+          <p class="mb-4">Automatizziamo processi aziendali come ordini, report, previsioni e comunicazioni, grazie all’integrazione delle AI con sistemi aziendali.</p>
+          <span class="font-bold">da 299 € setup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="text-center py-20 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
+    <h2 class="text-3xl font-bold mb-4">Vuoi una demo gratuita?</h2>
+    <p class="mb-8 text-lg">Scopri come Auryn può potenziare il tuo lavoro con un ecosistema di intelligenze artificiali integrate.</p>
+    <a href="mailto:info@auryn.ai" class="cta-button">Richiedi la tua demo</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm text-gray-500">
+    © 2025 Auryn · Tutti i diritti riservati · <a href="/privacy" class="underline">Privacy Policy</a>
+  </footer>
+
 </body>
 </html>
