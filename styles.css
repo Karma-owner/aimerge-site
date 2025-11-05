@@ -1,81 +1,127 @@
-/* ===== Base & font ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-:root{
-  --forest-dark: #0B3D2E;
-  --forest-mid:  #1B4332;
-  --sage:        #74C69D;
-  --ivory:       #F4F3EE;
-  --accent:      #D4AF37;
-  --muted:       #A8CFC0;
-  --glass:       rgba(255,255,255,0.04);
+:root {
+  --green-dark: #0c2f1e;
+  --green-medium: #1f6b4b;
+  --green-light: #4caf50;
+  --text-light: #e0f2e9;
+  --accent: #a5e6ba;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family: 'Poppins', system-ui, sans-serif;
-  background: linear-gradient(180deg,var(--forest-dark), var(--forest-mid));
-  color:var(--ivory);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(180deg, var(--green-dark), var(--green-medium));
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
 }
 
-/* ===== Navbar ===== */
-.navbar{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:14px 20px;
-  backdrop-filter: blur(6px);
-  background: linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08));
-  position:sticky;top:0;z-index:999;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(12, 47, 30, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ivory)}
-.brand-logo{height:40px;width:40px}
-.brand-name{font-weight:600;color:var(--sage);font-size:1.25rem}
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-.nav-links{display:flex;gap:18px;align-items:center}
-.nav-links a{color:var(--ivory);text-decoration:none;font-weight:500}
-.nav-links a:hover{color:var(--sage)}
-.flag img{height:14px}
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
 
-/* ===== Hero ===== */
-.hero{padding:84px 20px 48px;text-align:center}
-.hero h1{font-size:2.2rem;color:var(--sage);margin-bottom:10px}
-.lead{max-width:900px;margin:0 auto 20px;color:var(--muted)}
-.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{background:var(--ivory);color:var(--forest-dark);padding:10px 18px;border-radius:28px;text-decoration:none;font-weight:600}
-.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--ivory)}
-.link{color:var(--sage);text-decoration:underline}
+.lang-switch button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--accent);
+}
 
-/* ===== Features / sections ===== */
-.features, .about-short, .contact-short{padding:36px 20px;max-width:1100px;margin:0 auto}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.features article{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.lang-switch .active {
+  text-decoration: underline;
+}
 
-/* ===== Footer ===== */
-.site-footer{padding:28px 20px;text-align:center;background:linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.08));margin-top:30px}
-.site-footer a{color:var(--sage);text-decoration:none}
+main {
+  padding: 2rem;
+  text-align: center;
+}
 
-/* ===== Chat widget: Atreyu ===== */
-#atreyu-widget{position:fixed;right:18px;bottom:18px;z-index:1200;font-family:inherit}
-.atreyu-button{background:var(--sage);color:#032018;padding:10px 14px;border-radius:28px;border:none;cursor:pointer;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.35)}
-.atreyu-panel{width:320px;max-width:92vw;height:420px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border-radius:12px;padding:10px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(0,0,0,0.45);margin-top:10px}
-.atreyu-closed .atreyu-panel{display:none}
-.atreyu-header{display:flex;justify-content:space-between;align-items:center;padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.03);margin-bottom:8px}
-.atreyu-title{font-weight:700;color:var(--sage)}
-.atreyu-close{background:none;border:none;color:var(--ivory);cursor:pointer;font-size:16px}
-.atreyu-messages{flex:1;overflow:auto;padding:6px;gap:8px;display:flex;flex-direction:column}
-.atreyu-message{padding:8px 10px;border-radius:10px;max-width:85%}
-.atreyu-message.user{align-self:flex-end;background:rgba(255,255,255,0.06);color:var(--ivory)}
-.atreyu-message.assistant{align-self:flex-start;background:rgba(255,255,255,0.02);color:var(--ivory);border:1px solid rgba(255,255,255,0.02)}
-.atreyu-form{display:flex;gap:8px;margin-top:8px}
-.atreyu-form input{flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--ivory)}
-.atreyu-send{background:var(--sage);border:none;padding:8px 10px;border-radius:8px;color:#032018;font-weight:600}
+h2, h3 {
+  color: var(--accent);
+}
 
-/* ===== Responsive ===== */
-@media(max-width:900px){
-  .nav-links{gap:10px}
-  .hero h1{font-size:1.6rem}
-  .brand-name{font-size:1.05rem}
-  .features{grid-template-columns:1fr}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+/* Chat */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background: rgba(15, 50, 30, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background: var(--green-light);
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #2c6d49;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-light);
+}
+
+.chat-input button {
+  background: var(--green-light);
+  border: none;
+  color: #fff;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .chat-container {
+    width: 90%;
+    right: 5%;
+  }
 }
