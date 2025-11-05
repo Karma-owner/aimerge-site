@@ -3,88 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auryn – AI Ecosystems</title>
+  <title>Auryn – AI Integrations & Intelligent Automation</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="auryn-logo.svg" type="image/svg+xml">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <a href="#home" class="logo">
-      <img src="auryn-logo.svg" alt="Auryn Logo">
-      <span>Auryn</span>
-    </a>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="auryn-logo.svg" alt="Auryn Logo" class="logo">
+        <h1>Auryn</h1>
+      </a>
+    </div>
     <nav>
       <ul>
-        <li><a href="#about">Chi siamo</a></li>
-        <li><a href="#services">Servizi</a></li>
-        <li><a href="terms.html">Termini</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><button id="langToggle">EN</button></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servizi.html">Servizi</a></li>
+        <li><a href="chisiamo.html">Chi siamo</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <h1 data-it="Ecosistemi di Intelligenze Artificiali" data-en="AI Ecosystems that Collaborate">
-      Ecosistemi di Intelligenze Artificiali
-    </h1>
-    <p data-it="Auryn unisce diversi agenti AI per creare soluzioni intelligenti, pratiche e sostenibili." 
-       data-en="Auryn connects AI agents to build intelligent, practical and sustainable systems.">
-      Auryn unisce diversi agenti AI per creare soluzioni intelligenti, pratiche e sostenibili.
-    </p>
-    <a href="#services" class="cta">Scopri i servizi</a>
-  </section>
+  <main>
+    <section class="hero">
+      <h2>Soluzioni di Intelligenza Artificiale su Misura</h2>
+      <p>Trasforma la tua azienda con agenti AI integrati, automazioni intelligenti e strategie digitali data-driven.</p>
+      <a href="servizi.html" class="btn">Scopri di più</a>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <h2 data-it="Chi siamo" data-en="About us">Chi siamo</h2>
-    <p data-it="Auryn nasce per unire l’intelligenza artificiale con l’ingegno umano. Creiamo ecosistemi dove ChatGPT, Gemini e DeepSeek collaborano per fondere analisi, creatività e automazione." 
-       data-en="Auryn was born to unite artificial intelligence with human creativity. We build ecosystems where ChatGPT, Gemini, and DeepSeek collaborate to blend analysis, creativity, and automation.">
-      Auryn nasce per unire l’intelligenza artificiale con l’ingegno umano. Creiamo ecosistemi dove ChatGPT, Gemini e DeepSeek collaborano per fondere analisi, creatività e automazione.
-    </p>
-  </section>
+    <section class="hero-en">
+      <h2>Tailored Artificial Intelligence Solutions</h2>
+      <p>Empower your business with integrated AI agents, intelligent automation, and data-driven digital strategies.</p>
+      <a href="servizi.html" class="btn">Discover More</a>
+    </section>
+  </main>
 
-  <!-- Services -->
-  <section id="services" class="services">
-    <h2 data-it="Servizi" data-en="Services">Servizi</h2>
-    <div class="service-grid">
-      <div class="service">
-        <h3>Integrazione AI</h3>
-        <p>Colleghiamo diversi agenti intelligenti (ChatGPT, Gemini, DeepSeek) per creare soluzioni coordinate e automatizzate.</p>
-      </div>
-      <div class="service">
-        <h3>Automazioni su misura</h3>
-        <p>Realizziamo workflow con Zapier e API per risparmiare tempo e migliorare i processi aziendali.</p>
-      </div>
-      <div class="service">
-        <h3>Consulenza AI</h3>
-        <p>Supportiamo professionisti e startup nell’adozione etica e strategica dell’intelligenza artificiale.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Auryn – All rights reserved.</p>
-    <p class="disclaimer">
-      Auryn™ è un marchio indipendente. Tutti i nomi e marchi di AI citati appartengono ai rispettivi titolari.
-    </p>
-    <p>Contatti: <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a></p>
+    <p>© 2025 Auryn. Tutti i diritti riservati. <a href="copyright.html">Copyright & Policy</a></p>
+    <p>info.auryn.ai@gmail.com</p>
   </footer>
-
-  <!-- Script per lingua -->
-  <script>
-    const toggle = document.getElementById('langToggle');
-    let lang = 'it';
-    toggle.addEventListener('click', () => {
-      lang = lang === 'it' ? 'en' : 'it';
-      document.querySelectorAll('[data-it]').forEach(el => {
-        el.textContent = el.getAttribute(`data-${lang}`);
-      });
-      toggle.textContent = lang === 'it' ? 'EN' : 'IT';
-    });
-  </script>
 </body>
 </html>
