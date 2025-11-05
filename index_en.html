@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Auryn — Tailored AI solutions</title>
+  <meta name="description" content="Auryn builds ecosystems of AI agents (ChatGPT, Gemini, DeepSeek) for automations, content and analytics.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="auryn-logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="brand" href="index_en.html">
+      <img src="auryn-logo.svg" alt="Auryn logo" class="brand-logo">
+      <span class="brand-name">Auryn</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index_en.html">Home</a>
+      <a href="chisiamo.html">About</a>
+      <a href="servizi.html">Services</a>
+      <a href="contatti.html">Contact</a>
+      <a href="index.html" class="flag" aria-label="Italiano"><img src="https://flagcdn.com/16x12/it.png" alt="IT"></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>AI ecosystems that collaborate</h1>
+      <p class="lead">Auryn integrates AI agents (ChatGPT, Gemini, DeepSeek) to deliver customized automations, content and analytics for your business.</p>
+      <div class="cta-row">
+        <a class="btn" href="servizi.html">Discover services</a>
+        <a class="btn ghost" href="#contact">Contact us</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>Automations</h3>
+        <p>Zapier/Make flows to manage orders, CRM, email and repetitive communications.</p>
+      </article>
+      <article>
+        <h3>AI Agents</h3>
+        <p>Specialized assistants trained on your company data (support, marketing, analytics).</p>
+      </article>
+      <article>
+        <h3>Content & Analytics</h3>
+        <p>Automated texts, landing pages, reports and dashboards optimized for SEO.</p>
+      </article>
+    </section>
+
+    <section class="about-short">
+      <h2>About</h2>
+      <p>Auryn blends human expertise with AI to deliver practical, sustainable tools: more efficiency, less repetitive work.</p>
+      <a class="link" href="chisiamo.html">Read more</a>
+    </section>
+
+    <section id="contact" class="contact-short">
+      <h2>Contact</h2>
+      <p>For projects, demos or consulting: <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Auryn — All rights reserved.</p>
+    <p><a href="copyright.html">Copyright & Policy</a></p>
+  </footer>
+
+  <!-- include Atreyu widget JS identical to index.html but with lang:'en' in payload -->
+  <div id="atreyu-widget" class="atreyu-closed" aria-hidden="true">
+    <button id="atreyu-toggle" class="atreyu-button">Atreyu</button>
+    <div id="atreyu-panel" class="atreyu-panel" role="dialog" aria-label="Atreyu Assistant">
+      <div class="atreyu-header">
+        <div class="atreyu-title">Atreyu</div>
+        <button id="atreyu-close" class="atreyu-close">✕</button>
+      </div>
+      <div id="atreyu-messages" class="atreyu-messages"></div>
+      <form id="atreyu-form" class="atreyu-form">
+        <input id="atreyu-input" type="text" placeholder="Write a message to Atreyu..." required>
+        <button type="submit" class="atreyu-send">Send</button>
+      </form>
+      <div class="atreyu-footnote">Powered by Auryn AI</div>
+    </div>
+  </div>
+
+  <script>
+    // same widget code as in index.html but with lang:'en' in payload
+    // For brevity, reuse the same JS logic — replace ZAPIER_WEBHOOK with your webhook
+    /* COPY the exact JS from index.html and change payload.lang = 'en' */
+  </script>
+
+</body>
+</html>
