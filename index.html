@@ -1,47 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auryn – AI Integrations & Intelligent Automation</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Auryn — Soluzioni AI integrate</title>
+  <meta name="description" content="Auryn costruisce ecosistemi di agenti AI (ChatGPT, Gemini, DeepSeek) per automazioni, contenuti e analisi.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="auryn-logo.svg" type="image/svg+xml">
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <a href="index.html">
-        <img src="auryn-logo.svg" alt="Auryn Logo" class="logo">
-        <h1>Auryn</h1>
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="servizi.html">Servizi</a></li>
-        <li><a href="chisiamo.html">Chi siamo</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-      </ul>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="auryn-logo.svg" alt="Auryn logo" class="brand-logo">
+      <span class="brand-name">Auryn</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="chisiamo.html">Chi siamo</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="contatti.html">Contatti</a>
+      <!-- language flags -->
+      <a href="index_en.html" class="flag" aria-label="English"><img src="https://flagcdn.com/16x12/gb.png" alt="EN"></a>
     </nav>
   </header>
 
+  <!-- HERO -->
   <main>
     <section class="hero">
-      <h2>Soluzioni di Intelligenza Artificiale su Misura</h2>
-      <p>Trasforma la tua azienda con agenti AI integrati, automazioni intelligenti e strategie digitali data-driven.</p>
-      <a href="servizi.html" class="btn">Scopri di più</a>
+      <h1>Ecosistemi di Intelligenze Artificiali</h1>
+      <p class="lead">Auryn integra agenti AI (ChatGPT, Gemini, DeepSeek) per automazioni, contenuti e analisi intelligenti su misura per la tua azienda.</p>
+      <div class="cta-row">
+        <a class="btn" href="servizi.html">Scopri i servizi</a>
+        <a class="btn ghost" href="#contact">Contattaci</a>
+      </div>
     </section>
 
-    <section class="hero-en">
-      <h2>Tailored Artificial Intelligence Solutions</h2>
-      <p>Empower your business with integrated AI agents, intelligent automation, and data-driven digital strategies.</p>
-      <a href="servizi.html" class="btn">Discover More</a>
+    <!-- Featured (short) -->
+    <section class="features">
+      <article>
+        <h3>Automazioni</h3>
+        <p>Flussi Zapier/Make per gestione ordini, CRM, email e comunicazioni ripetitive.</p>
+      </article>
+      <article>
+        <h3>AI Agents</h3>
+        <p>Assistenti specializzati addestrati sui tuoi dati aziendali (supporto, marketing, analisi).</p>
+      </article>
+      <article>
+        <h3>Contenuti & Analisi</h3>
+        <p>Testi, landing, report e dashboard generate in automatico e ottimizzate SEO.</p>
+      </article>
+    </section>
+
+    <!-- Chi siamo short -->
+    <section class="about-short">
+      <h2>Chi siamo</h2>
+      <p>Auryn unisce competenze umane e agenti AI per creare strumenti concreti e sostenibili: più efficienza, meno lavoro ripetitivo.</p>
+      <a class="link" href="chisiamo.html">Leggi di più</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-short">
+      <h2>Contattaci</h2>
+      <p>Per progetti, demo o consulenze: <a href="mailto:info.auryn.ai@gmail.com">info.auryn.ai@gmail.com</a></p>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Auryn. Tutti i diritti riservati. <a href="copyright.html">Copyright & Policy</a></p>
-    <p>info.auryn.ai@gmail.com</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Auryn — Tutti i diritti riservati.</p>
+    <p><a href="copyright.html">Copyright & Policy</a></p>
   </footer>
+
+  <!-- CHAT WIDGET: Atreyu -->
+  <div id="atreyu-widget" class="atreyu-closed" aria-hidden="true">
+    <button id="atreyu-toggle" class="atreyu-button" aria-label="Apri Atreyu">Atreyu</button>
+    <div id="atreyu-panel" class="atreyu-panel" role="dialog" aria-label="Atreyu Assistant">
+      <div class="atreyu-header">
+        <div class="atreyu-title">Atreyu</div>
+        <button id="atreyu-close" class="atreyu-close" aria-label="Chiudi">✕</button>
+      </div>
+      <div id="atreyu-messages" class="atreyu-messages" aria-live="polite"></div>
+      <form id="atreyu-form" class="atreyu-form">
+        <input id="atreyu-input" name="message" type="text" placeholder="Scrivi un messaggio ad Atreyu..." autocomplete="off" required>
+        <button type="submit" class="atreyu-send">Invia</button>
+      </form>
+      <div class="atreyu-footnote">Powered by Auryn AI • Risposte automatiche</div>
+    </div>
+  </div>
+
+  <script>
+    /* ---------- Widget UI ---------- */
+    const toggle = document.getElementById('atreyu-toggle');
+    const panel = document.getElementById('atreyu-panel');
+    const widget = document.getElementById('atreyu-widget');
+    const closeBtn = document.getElementById('atreyu-close');
+    const form = document.getElementById('atreyu-form');
+    const messagesEl = document.getElementById('atreyu-messages');
+    const input = document.getElementById('atreyu-input');
+
+    function openAtreyu(){ widget.classList.remove('atreyu-closed'); widget.classList.add('atreyu-open'); panel.setAttribute('aria-hidden','false'); input.focus(); }
+    function closeAtreyu(){ widget.classList.remove('atreyu-open'); widget.classList.add('atreyu-closed'); panel.setAttribute('aria-hidden','true'); }
+
+    toggle.addEventListener('click', ()=> openAtreyu());
+    closeBtn.addEventListener('click', ()=> closeAtreyu());
+
+    // Simple local history (keeps messages across reloads)
+    const HISTORY_KEY = 'atreyu_history_v1';
+    function renderHistory(){
+      messagesEl.innerHTML = '';
+      const history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+      history.forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'atreyu-message ' + (m.role === 'user' ? 'user' : 'assistant');
+        div.textContent = m.text;
+        messagesEl.appendChild(div);
+      });
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+    renderHistory();
+
+    /* ---------- Submit to Zapier webhook (replace URL) ---------- */
+    const ZAPIER_WEBHOOK = 'https://hooks.zapier.com/hooks/catch/XXXXXX/YYYYYY'; // <- SOSTITUISCI con il tuo webhook Zapier
+
+    async function sendToZapier(text){
+      // Append user message locally
+      const history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+      history.push({role:'user', text});
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+      renderHistory();
+
+      // Post to Zapier webhook which will call your AI (ChatGPT/Gemini) and return a reply via Zapier response or follow-up webhook
+      try {
+        const payload = {
+          message: text,
+          page: 'index',
+          lang: 'it',
+          user_agent: navigator.userAgent
+        };
+        const resp = await fetch(ZAPIER_WEBHOOK, {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(payload)
+        });
+        // Zapier can reply synchronously with a quick helpful message
+        if(resp.ok){
+          const data = await resp.json().catch(()=>null);
+          const reply = (data && data.reply) ? data.reply : 'Grazie — ricevo il messaggio e ti rispondo a breve.';
+          const history2 = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+          history2.push({role:'assistant', text: reply});
+          localStorage.setItem(HISTORY_KEY, JSON.stringify(history2));
+          renderHistory();
+        } else {
+          throw new Error('Zapier error');
+        }
+      } catch(e){
+        const history3 = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        history3.push({role:'assistant', text: 'Errore: impossibile contattare il servizio. Riprova più tardi.'});
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history3));
+        renderHistory();
+      }
+    }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if(!text) return;
+      input.value = '';
+      sendToZapier(text);
+    });
+  </script>
+
 </body>
 </html>
